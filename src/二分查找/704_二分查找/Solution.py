@@ -3,9 +3,8 @@ class Solution:
         start, end = 0, len(nums)-1
         while start+1 < end:
             mid = int((end+start)/2)
-            print(start,mid,end)
             if nums[mid] == target:
-                start = mid
+                return mid
             elif nums[mid] > target:
                 end = mid
             elif nums[mid] < target:
