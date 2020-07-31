@@ -16,7 +16,7 @@ def generateRM(path):
         f.write('# myLeetcode\nLeetcode刷题记录，自202006\n\n')
     else:
         f = open('./README.md','a')
-        f.write('# 剑指Offer\n剑指Offer刷题记录，自202007\n\n')
+        f.write('''# 剑指Offer\n剑指Offer刷题记录，自202007。\n\n 憨憨东西，好多bug，不做了，回去做Leetcode香香。\n\n''')
 
     for file in Filelist:
         if re.match(path+r'.+?/.+?',file):  ## 有更深一层，如 ./Leetcode/Hash/1_两数之和
